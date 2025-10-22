@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apurva → One‑Page Proposal for MetaDatix</title>
+  <meta name="description" content="Apurva Ravikar Chavan — MetaDatix‑focused one‑pager with ROI‑linked AI delivery stack." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b0c10; --card:#111318; --ink:#e6edf3; --muted:#9aa4af; --brand:#7c3aed; --accent:#22d3ee; --ring:#1f6feb; }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 20px 64px}
+    header{display:grid;gap:16px;padding:14px;border:1px solid #1e293b;background:linear-gradient(180deg,rgba(124,58,237,.10),rgba(34,211,238,.08));border-radius:18px}
+    .title{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px}
+    h1{font-size:28px;font-weight:700;margin:0;letter-spacing:.2px}
+    .links{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+    .links a{display:inline-flex;align-items:center;gap:8px;background:#0b1220;border:1px solid #263246;padding:8px 12px;border-radius:10px}
+    nav.topnav{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 4px;position:sticky;top:8px;z-index:50}
+    nav.topnav a{padding:8px 10px;border:1px solid #263246;border-radius:12px;background:linear-gradient(135deg,#0b1220,#0e1628);font-size:12.5px}
+    nav.topnav a.cta{border-color:var(--ring)}
+    .section{margin-top:28px}
+    .section h2{font-size:20px;margin:0 0 12px;background-image:linear-gradient(90deg,var(--brand),var(--accent),var(--brand));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:shine 8s linear infinite}
+    @keyframes shine{0%{background-position:0% 50%}100%{background-position:100% 50%}}
+    .grid{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:14px}
+    @media(min-width:640px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(min-width:980px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    .card{background:linear-gradient(180deg,#111318,#0e1117) padding-box,linear-gradient(180deg,rgba(124,58,237,.25),rgba(34,211,238,.2)) border-box;border:1px solid transparent;border-radius:16px;padding:16px;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+    .card:hover{transform:translateY(-4px) rotate3d(1,-1,0,.3deg);box-shadow:0 14px 36px rgba(124,219,255,.12)}
+    .card h3{margin:2px 0 8px;font-size:16px}
+    .desc{color:var(--muted);font-size:13.5px;line-height:1.45}
+    .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+    .tag{font-size:11.5px;color:#dbeafe;border:1px dashed #334155;padding:4px 8px;border-radius:999px;background:linear-gradient(135deg,#0e1626,#0f1a2c)}
+    .btn{display:inline-flex;align-items:center;gap:8px;font-size:13px;padding:8px 10px;border-radius:10px;border:1px solid #2b3950;background:linear-gradient(135deg,#0b1220,#101a2f);color:var(--ink);text-decoration:none}
+    .btn:hover{border-color:var(--ring);box-shadow:0 6px 18px rgba(124,219,255,.15);transform:translateY(-1px)}
+    .note{font-size:13px;color:#cbd5e1;background:#0b1220;border:1px solid #263246;padding:10px 12px;border-radius:12px}
+    .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:#0b1220;border:1px solid #263246;border-radius:14px;padding:12px;margin-top:8px}
+    .flow .box{padding:10px 12px;border-radius:10px;background:#0f172a;border:1px solid #273449;font-size:12.5px}
+    .arrow{opacity:.6}
+    .kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:10px}
+    .kpi{background:#0b1220;border:1px solid #263246;border-radius:14px;padding:12px;box-shadow:0 6px 16px rgba(124,219,255,.06)}
+    .kpi h4{margin:0 0 6px;font-size:13px}
+    .bar{height:8px;background:#0f172a;border:1px solid #273449;border-radius:999px;overflow:hidden}
+    .bar span{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--accent));width:60%}
+    .timeline{list-style:none;padding:0;margin:8px 0}
+    .timeline li{position:relative;padding-left:16px;margin:10px 0}
+    .timeline li::before{content:'•';position:absolute;left:0;top:0;color:var(--accent)}
+    .scenarios{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px}
+    @media(min-width:640px){.scenarios{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    .scenario{background:var(--card);border:1px solid #1e293b;border-radius:14px;padding:12px}
+    .scenario h4{margin:0 0 6px;font-size:14px}
+    .scenario pre{white-space:pre-wrap;background:#0b1220;border:1px solid #263246;border-radius:10px;padding:8px;font-size:12.5px;overflow:auto}
+    .pill{display:inline-block;border:1px dashed #334155;padding:2px 8px;border-radius:999px;font-size:11.5px;margin-right:6px;background:linear-gradient(135deg,#0e1626,#0f1a2c);color:#dbeafe}
+    .mini{width:100%;border-collapse:separate;border-spacing:0 6px;margin-top:8px}
+    .mini th,.mini td{font-size:12.5px;padding:8px 10px;border:1px solid #263246}
+    .mini th{background:#0b1220;text-align:left}
+    .mini td{background:#0f172a}
+    footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* Preview mode */
+    #exitPreview{position:fixed;top:12px;right:12px;z-index:1000;display:none;padding:8px 12px;border-radius:10px;border:1px solid #2b3950;background:linear-gradient(135deg,#0b1220,#101a2f);color:var(--ink);text-decoration:none}
+    .preview-mode #exitPreview{display:inline-flex}
+    .preview-mode nav.topnav{display:none}
+    .preview-mode header .links{display:none}
+    .preview-mode .wrap{max-width:900px}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <h1>Apurva Ravikar Chavan</h1>
+      </div>
+      <div class="links">
+        <a href="mailto:apurvachavan125@gmail.com">📧 Email</a>
+        <a href="https://www.linkedin.com/in/apurvachavan125/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        <a href="https://github.com/Apurva1205" target="_blank" rel="noopener">🐙 GitHub</a>
+      </div>
+    </header>
+
+    <nav class="topnav">
+      <a href="#pitch-metadatix" class="company active" data-theme="metadatix">🤖 MetaDatix</a>
+      <a href="#" id="print">🖨️ Print PDF</a>
+      <a href="#" id="preview">👀 Preview</a>
+      <a href="mailto:apurvachavan125@gmail.com" class="cta">Contact</a>
+    </nav>
+
+    <section class="section" id="pitch-metadatix">
+      <h2>Idea Pitch for MetaDatix — “ROI‑Linked AI Fastlane”</h2>
+      <p class="note">Commission‑friendly delivery: a <strong>repeatable ML stack</strong> that ships <em>measurable business outcomes</em> fast — then scales. Built around Python, TensorFlow, and PyTorch with lean MLOps.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>TL;DR (30 sec)</h3>
+          <ul class="desc">
+            <li><strong>What:</strong> Discovery → POC → Production pipeline with KPIs wired to revenue & adoption.</li>
+            <li><strong>Why:</strong> Aligns perfectly with your <em>commission + sweat‑equity</em> model — we only win when clients do.</li>
+            <li><strong>Impact:</strong> Faster time‑to‑value, lower inference cost, clear ROI dashboards clients can trust.</li>
+          </ul>
+          <div class="tags"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">MLOps</span><span class="tag">ROI</span></div>
+        </article>
+
+        <article class="card">
+          <h3>Architecture (high level)</h3>
+          <div class="flow">
+            <span class="box">Data audit & ingestion</span><span class="arrow">➜</span>
+            <span class="box">Modeling (TF/PT)</span><span class="arrow">➜</span>
+            <span class="box">Eval (lift, savings)</span><span class="arrow">➜</span>
+            <span class="box">Serving (FastAPI + Docker)</span><span class="arrow">➜</span>
+            <span class="box">Monitoring (drift, latency)</span><span class="arrow">➜</span>
+            <span class="box">Iteration (A/B, ABn)</span>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><h4>Adoption</h4><div class="bar"><span style="width:62%"></span></div><small>Goal: >60% weekly active users</small></div>
+            <div class="kpi"><h4>Cost / 1k inferences</h4><div class="bar"><span style="width:45%"></span></div><small>Goal: −30% vs baseline</small></div>
+            <div class="kpi"><h4>Time‑to‑value</h4><div class="bar"><span style="width:70%"></span></div><small>Goal: POC ≤ 2–3 wks</small></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Live Client Scenarios</h3>
+          <div class="scenarios">
+            <div class="scenario">
+              <h4>1) Lead → Close Propensity</h4>
+              <span class="pill">Classification</span><span class="pill">Calibration</span>
+              <pre>// Train calibrated model to rank leads by revenue lift
+// Route only high‑value leads; dashboard shows incremental ROI</pre>
+            </div>
+            <div class="scenario">
+              <h4>2) RAG Support Copilot</h4>
+              <span class="pill">LLMs</span><span class="pill">Retrieval</span>
+              <pre>// Private docs + embeddings → grounded answers with citations
+// Measure ticket deflection & response latency improvements</pre>
+            </div>
+            <div class="scenario">
+              <h4>3) Anomaly Detection for Payments</h4>
+              <span class="pill">Time‑Series</span><span class="pill">Autoencoders</span>
+              <pre>// Real‑time outlier scoring; alert only when risk × value is high
+// Cuts false positives; adds investigator notes loop</pre>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Roadmap (6 weeks)</h3>
+          <ul class="timeline desc">
+            <li><strong>Week 0:</strong> Discovery call → success metrics & data access list.</li>
+            <li><strong>Week 1–2:</strong> Data audit, baselines, model shortlist; deploy sandbox API.</li>
+            <li><strong>Week 3–4:</strong> POC model + dashboard; ABn plan; cost profiling.</li>
+            <li><strong>Week 5–6:</strong> Productionize (Docker + FastAPI), monitoring & handover.</li>
+          </ul>
+          <div class="tags"><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">ABn</span><span class="tag">Dashboards</span></div>
+        </article>
+
+        <article class="card">
+          <h3>Commission & Sweat‑Equity Alignment</h3>
+          <ul class="desc">
+            <li>Wire KPIs (<em>revenue lift, cost saved, deflection</em>) directly into the dashboard.</li>
+            <li>Contracts reference <strong>observable metrics</strong> — adoption, conversions, & latency SLOs.</li>
+            <li>Monthly report: <em>$$ impact</em>, model health, next bets → fuels commission payouts.</li>
+          </ul>
+          <div class="tags"><span class="tag">Attribution</span><span class="tag">Analytics</span><span class="tag">SLOs</span></div>
+        </article>
+
+        <article class="card">
+          <h3>Why me / Proof</h3>
+          <ul class="desc">
+            <li><a target="_blank" rel="noopener" href="https://github.com/Apurva1205/AI-RESUME-ENHANCER"><em>AI‑RESUME‑ENHANCER</em></a> — ranking & scoring engine (NLP).</li>
+            <li><a target="_blank" rel="noopener" href="https://github.com/Apurva1205/Flask-app"><em>Flask‑app</em></a> — lightweight APIs for fast deployment.</li>
+            <li><a target="_blank" rel="noopener" href="https://github.com/Apurva1205/Data-Science"><em>Data‑Science</em></a> — feature engineering & analytics playbooks.</li>
+            <li><a target="_blank" rel="noopener" href="https://github.com/Apurva1205/Time-Series-Forecasting-For-Energy-Consumption"><em>Time‑Series‑Forecasting</em></a> — forecasting & anomaly ideas.</li>
+            <li><a target="_blank" rel="noopener" href="https://github.com/Apurva1205/LLMs-in-Finance"><em>LLMs‑in‑Finance</em></a> — domain examples & agents.</li>
+          </ul>
+        </article>
+
+        <article class="card" id="mdx-mock">
+          <h3>Mock Uplift Snapshot (demo)</h3>
+          <p class="desc">Synthetic lead‑scoring demo: see est. uplift, CI, and <em>expected ROI</em> at a glance.</p>
+          <table class="mini">
+            <tr><th>Metric</th><th>Value</th></tr>
+            <tr><td>Baseline conversion</td><td id="b-cvr">—</td></tr>
+            <tr><td>Model conversion</td><td id="m-cvr">—</td></tr>
+            <tr><td>Uplift (Δ)</td><td id="uplift">—</td></tr>
+            <tr><td>95% CI width</td><td id="ci">—</td></tr>
+            <tr><td>Est. ROI / 1k leads</td><td id="roi">—</td></tr>
+          </table>
+          <div class="actions"><a href="#" class="btn" id="run-uplift">▶ Run demo</a><a href="#" class="btn" id="explain-uplift">ℹ️ What’s this?</a></div>
+        </article>
+
+        <article class="card" id="mdx-glossary">
+          <h3>Delivery Playbook & KPIs</h3>
+          <ul class="desc">
+            <li><strong>Adoption:</strong> share of users actively using the feature weekly.</li>
+            <li><strong>Lift:</strong> model‑driven improvement over baseline (conversion or savings).</li>
+            <li><strong>Latency SLO:</strong> P50/P95 inference latency targets by use case.</li>
+            <li><strong>Cost per 1k:</strong> dollars per 1000 inferences; tracked vs target.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="xp-projects">
+      <h2>Experience & Selected Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Data Scientist Intern — Mental Model Algorithms, Ideatrix Co. <small class="muted">Jul 2025 – Present</small></h3>
+          <ul class="desc">
+            <li>Design <strong>reasoning algorithms</strong> for multi‑agent dialogue games using LLMs + cognitive models.</li>
+            <li>Model deception, inference, trust; analyze agent behavior; deliver research‑ready write‑ups.</li>
+          </ul>
+          <div class="tags"><span class="tag">LLMs</span><span class="tag">Multi‑Agent</span><span class="tag">Python</span></div>
+        </article>
+        <article class="card">
+          <h3>Research Assistant — Data Science, University of New Haven <small class="muted">Jan 2024 – May 2025</small></h3>
+          <ul class="desc">
+            <li>Built <strong>fine‑tuning pipelines</strong> and secure deployments with active‑learning loops.</li>
+            <li>Delivered reproducible code and experiment reports for faculty research.</li>
+          </ul>
+          <div class="tags"><span class="tag">PyTorch</span><span class="tag">Transformers</span><span class="tag">MLOps</span></div>
+        </article>
+        <article class="card">
+          <h3>Machine Learning Engineer — TCS Research & Innovation, Mumbai <small class="muted">Jun 2021 – Aug 2023</small></h3>
+          <ul class="desc">
+            <li>Shipped forecasting models (APIs + containers); set up model tracking & inference pipelines.</li>
+            <li>Cut compute cost by ~25% via resource‑efficient containerization on AWS.</li>
+          </ul>
+          <div class="tags"><span class="tag">Python</span><span class="tag">AWS</span><span class="tag">Docker</span></div>
+        </article>
+        <article class="card">
+          <h3>Project — AI Resume Enhancer <small class="muted">Jan 2025 – May 2025</small></h3>
+          <ul class="desc">
+            <li>NLP parser w/ <strong>sentence‑transformers</strong>; ATS‑optimized scoring; real‑time APIs.</li>
+          </ul>
+          <div class="tags"><span class="tag">NLP</span><span class="tag">IR</span><span class="tag">APIs</span></div>
+          <p class="desc"><a target="_blank" rel="noopener" href="https://github.com/Apurva1205/AI-RESUME-ENHANCER">GitHub → AI‑RESUME‑ENHANCER</a></p>
+        </article>
+        <article class="card">
+          <h3>Project — Time‑Series Forecasting for Energy Consumption <small class="muted">Aug 2023 – Dec 2023</small></h3>
+          <ul class="desc">
+            <li>ARIMA + LSTM for utility loads; added anomaly alerts for resilience.</li>
+          </ul>
+          <div class="tags"><span class="tag">Time‑Series</span><span class="tag">ARIMA</span><span class="tag">LSTM</span></div>
+          <p class="desc"><a target="_blank" rel="noopener" href="https://github.com/Apurva1205/Time-Series-Forecasting-For-Energy-Consumption">GitHub → Time‑Series‑Forecasting</a></p>
+        </article>
+      </div>
+    </section>
+
+    <footer>© Apurva Ravikar Chavan — MetaDatix Proposal</footer>
+  </div>
+
+  <a href="#" id="exitPreview" title="Exit preview">✖ Exit Preview</a>
+  <script>
+    // Print
+    document.getElementById('print')?.addEventListener('click', function(e){ e.preventDefault(); window.print(); });
+
+    // Preview toggle
+    (function(){
+      var previewBtn=document.getElementById('preview');
+      var exitBtn=document.getElementById('exitPreview');
+      if(previewBtn){ previewBtn.addEventListener('click', function(e){ e.preventDefault(); document.body.classList.add('preview-mode'); window.scrollTo({top:0, behavior:'smooth'}); }); }
+      if(exitBtn){ exitBtn.addEventListener('click', function(e){ e.preventDefault(); document.body.classList.remove('preview-mode'); }); }
+    })();
+
+    // Mock uplift demo (synthetic numbers)
+    (function(){
+      function randn(){ let u=0,v=0; while(u===0) u=Math.random(); while(v===0) v=Math.random();
+        return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); }
+      function run(){
+        const base=0.08 + 0.01*randn(); // 8% baseline CVR
+        const model=base + Math.max(0, 0.015 + 0.007*randn()); // ~1.5% uplift
+        const n=2000; // eval sample
+        const se=Math.sqrt(base*(1-base)/n + model*(1-model)/n);
+        const uplift=model-base; const ci=1.96*se;
+        const revPer=120; // $ per conversion example
+        const roi = uplift * n * revPer;
+        const pct = (x)=> (x*100).toFixed(2)+'%';
+        document.getElementById('b-cvr').textContent=pct(base);
+        document.getElementById('m-cvr').textContent=pct(model);
+        document.getElementById('uplift').textContent=pct(uplift);
+        document.getElementById('ci').textContent=pct(2*ci);
+        document.getElementById('roi').textContent='$'+roi.toFixed(0);
+      }
+      document.getElementById('run-uplift')?.addEventListener('click', e => { e.preventDefault(); run(); });
+      document.getElementById('explain-uplift')?.addEventListener('click', e => {
+        e.preventDefault(); alert('Synthetic lead‑scoring uplift snapshot. Baseline vs model conversion, 95% CI width, and an ROI back‑of‑the‑envelope.');
+      });
+    })();
+  </script>
+</body>
+</html>
